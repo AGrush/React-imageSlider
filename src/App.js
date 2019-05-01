@@ -3,11 +3,8 @@ import Slide from './Slide'
 import LeftArrow from './LeftArrow'
 import RightArrow from './RightArrow'
 
-export class Slider extends Component {
-  constructor(props){
-    super(props)
-
-    this.state = {
+class Slider extends Component {
+  state = {
       images: [
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
@@ -20,7 +17,6 @@ export class Slider extends Component {
       ],
       currentIndex: 0,
       translateValue: 0
-    }
   }
   
   goToPrevSlide = () => {
